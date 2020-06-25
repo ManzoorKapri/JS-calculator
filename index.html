@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MK Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   
+<h3 style="text-align: center;">This is a responsive Calculator designed by MK without any framwork.</h3>
+    <br><br>
+<div class="main">
+        <div class="cal">
+        <div class="tarea" >
+            <input class="result" id="result" type="text" style="height: 45px; width: 160px;">
+        </div>
+                <center>
+                    <h4 class="topic">MK CALCULATOR</h4>
+                </center>
+                <div class="btns">
+        <div>
+            <button onclick="clearResult('MC')" style="width: 30px;">MC</button>
+            <button onclick="clearResult('MR')" style="width: 30px;">MR</button>
+            <button onclick="clearResult('MS')" style="width: 30px;">MS</button>
+            <button onclick="clearResult('M+')" style="width: 30px;">M+</button>
+            <button onclick="clearResult('M-')" style="width: 30px;">M-</button>
+        </div>
+
+        <div>
+            <button onclick="clearResult('MC')" id="clear" style="width: auto;"><---</button>
+            <button onclick="clearResult('MC')" style="width: 28px;">CE</button>
+            <button onclick="clearResult('MC')" style="width: 30px;">C</button>
+            <button onclick="getNumber('+')"    style="width: 30px;">+</button>
+            <button onclick="getNumber('+')"    style="width: 31px;">+</button>
+            
+        </div>
+        <div>
+            <button onclick="getNumber('7')" style="width: 31px;">7</button>
+            <button onclick="getNumber('8')" style="width: 28px;">8</button>
+            <button onclick="getNumber('9')" style="width: 29px;">9</button>
+            <button onclick="getNumber('/')"style="width: 30px;">/</button>
+            <button onclick="getNumber('%')"style="width: 32px;">%</button>
+        </div>
+
+        <div>
+            <button onclick="getNumber('4')" style="width: 30px;">4</button>
+            <button onclick="getNumber('5')" style="width: 30px;">5</button>
+            <button onclick="getNumber('6')" style="width: 28px;">6</button>
+            <button onclick="getNumber('*')"style="width: 29px;">x</button>
+            <button style="width: 33px;">1/x</button>
+        </div>
+        
+      <div>
+        <button onclick="getNumber('1')"  style="width: 30px;">1</button>
+         <button onclick="getNumber('2')" style="width: 30px;">2</button>
+         <button onclick="getNumber('3')" style="width: 30px;">3</button>
+         <button onclick="getNumber('-')" style="width: 30px;">-</button>
+         
+         </div>
+           
+         <div>
+            <button onclick="getNumber('0')" style="width: 30px;">0</button>
+             <button onclick="getNumber('.')" style="width: 30px;">.</button>
+             <button onclick="getNumber('%')" style="width: 30px;">%</button>
+             <button onclick="getNumber('+')" style="width: 30px;">+</button>
+             </div>
+            
+               
+        
+        </div>
+        </div>
+        <button onclick= "getResult()" class="ez">=</button>
+    </div>
+
+
+
+
+    <script src="app.js"></script>
+</body>
+</html>
